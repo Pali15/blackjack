@@ -22,7 +22,6 @@ public class Card implements Serializable
 		if (newValue < 1 || newValue > 13) {
 			throw new InvalidCardValueException(newValue);
 		} else {
-			
 			this.value = newValue;
 		}
 		if (newSuit != 'H' && newSuit != 'S' && newSuit != 'D' && newSuit != 'C') {

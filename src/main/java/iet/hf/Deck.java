@@ -17,23 +17,21 @@ public class Deck extends Exception implements Serializable
 
 		int count = 0;
 		try{
-		for (int i = 1; i <= 13; i++) {
-			deck[count++] = new Card('H', i);
-		}
-		for (int i = 1; i <= 13; i++) {
-			deck[count++] = new Card('S', i);
-		}
-		for (int i = 1; i <= 13; i++) {
-			deck[count++] = new Card('C', i);
-		}
-		for (int i = 1; i <= 13; i++) {
-			deck[count++] = new Card('D', i);
-		}	
+			for (int i = 1; i <= 13; i++) {
+				deck[count++] = new Card('H', i);
+			}
+			for (int i = 1; i <= 13; i++) {
+				deck[count++] = new Card('S', i);
+			}
+			for (int i = 1; i <= 13; i++) {
+				deck[count++] = new Card('C', i);
+			}
+			for (int i = 1; i <= 13; i++) {
+				deck[count++] = new Card('D', i);
+			}
 		}
 		
-		catch(InvalidCardValueException | InvalidCardSuitException exp1) {
-			
-		}
+		catch(InvalidCardValueException | InvalidCardSuitException exp1) {}
 		nextCardIndex = 0;
 	}
 	private void isIndexGood(int index) throws InvalidDeckPositionException {

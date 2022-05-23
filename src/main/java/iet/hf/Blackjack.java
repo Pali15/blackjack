@@ -1,11 +1,6 @@
 package iet.hf;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+import java.io.*;
 import java.util.Scanner;
 
 public class Blackjack {
@@ -28,7 +23,7 @@ public class Blackjack {
 			mygame.clearHands();
 		} while (mygame.playAgain());
 		//mygame.endGame();
-
+/*
 		try
 		{
 			FileOutputStream outObjectFile = new FileOutputStream("objOut", false);
@@ -44,9 +39,8 @@ public class Blackjack {
 		{
 			System.out.println("No file");
 		}
-		catch(IOException ioException)
-		{	
-			System.out.println("bad IO");
+		catch(IOException ignored)
+		{
 		}
 		
 		try
@@ -64,15 +58,14 @@ public class Blackjack {
 		{
 			System.out.println("No File");
 		}
-		catch(IOException ioException)
-		{	
-			System.out.println("IO no good");
+		catch(IOException ignored)
+		{
 		}
 		
 		catch(ClassNotFoundException cnfException)
 		{	
 			System.out.println("This is not a Card.");
-		}
+		}*/
 		
 	}
 
